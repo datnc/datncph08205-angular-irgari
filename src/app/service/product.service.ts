@@ -16,4 +16,15 @@ export class ProductService {
     console.log("service")
     return this.products = this.products.filter(product => product.id != id)
   }
+  addProduct(product){
+
+    console.log(product);
+
+    let newObj = {id: 6,...product};
+    console.log(newObj);
+    
+    this.products.push(newObj);
+    console.log(this.products)
+
+  }
 }
