@@ -14,14 +14,16 @@ export class ProductManagerComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-   this.productService
+   this.products = this.productService.getProducts();
   }
+
   // products;
   // selected: Product;
   // hienthi(product) {
   //     this.selected = product;
   // }
-  // xoa(id){
-  //   return this.products = this.products.filter(product => product.id != id);
-  // }
+   xoa(id){
+     console.log("component")
+     this.productService.removeProducts(id);
+   }
 }

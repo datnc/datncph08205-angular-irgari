@@ -9,9 +9,11 @@ export class ProductService {
   constructor() { }
 
   getProducts(){
-    return this.products;
+    console.log(1);
+     return this.products;
   }
-  removeProducts(){
-
+  removeProducts(id){
+    console.log("service")
+    return this.products = this.products.filter(product => product.id != id)
   }
 }
