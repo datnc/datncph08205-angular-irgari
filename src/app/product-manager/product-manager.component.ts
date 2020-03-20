@@ -22,8 +22,8 @@ export class ProductManagerComponent implements OnInit {
   hienthi(product) {
       this.selected = product;
   }
-   xoa(id){
+   RemoveProducts(id){
      console.log("component")
-     this.productService.removeProducts(id);
+     this.products = this.productService.removeProducts(id);
    }
 }
