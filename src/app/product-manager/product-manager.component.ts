@@ -18,10 +18,10 @@ export class ProductManagerComponent implements OnInit {
   }
 
   // products;
-  selected: Product;
-  hienthi(product) {
-      this.selected = product;
-  }
+  // selected: Product;
+  // hienthi(product) {
+  //     this.selected = product;
+  // }
    RemoveProducts(id){
      console.log("component")
      this.products = this.productService.removeProducts(id);
