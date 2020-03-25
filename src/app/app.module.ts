@@ -15,9 +15,10 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule ],
   declarations: [ AppComponent, HelloComponent, SlideComponent, ProductComponent, ProductListComponent, CategoryComponent, ProductManagerComponent, AddProductComponent, AboutComponent, HomeComponent, NotFoundComponent, ProductDetailComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
